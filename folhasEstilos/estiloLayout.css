@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    overflow-x: hidden; 
+}
+header {
+    width: 100%; 
+    overflow: hidden; 
+}
+header img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
+}
+nav {
+    background-color: white; 
+    padding: 5px 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav img {
+    width: 200px; 
+    height: auto; 
+}
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+}
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: black;
+    padding: 5px 8px; 
+    display: inline-block; 
+}
+
+nav ul li a:hover {
+    background-color: #d8b6e6; 
+    border-radius: 4px; 
+}
+
+
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #cec0c0; 
+    min-width: 100px; 
+    box-shadow: 0 5px 10px black;
+    top: 100%; 
+    left: 0; 
+}
+.dropdown-content a {
+    color: black; 
+    padding: 16px 18px; 
+    text-decoration: none; 
+    display: block; 
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ecd4d4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+footer {
+    background-color: #ecd4d4; 
+    color: black; 
+    padding: 10px; 
+    text-align: center; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+}
+@media (min-width: 992px) {
+    nav {
+        padding: 10px 20px; 
+    }
+
+    nav ul {
+        margin-left: auto;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+

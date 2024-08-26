@@ -1,0 +1,100 @@
+article {
+    flex: 3; 
+}
+
+aside {
+    flex: 1; 
+    background: #fff;
+    padding: 20px; 
+    margin-left: 20px; 
+    border-radius: 8px; 
+    box-shadow: 10 0 10px black
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: #333;
+}
+
+.service h3 {
+    margin: 0;
+    color: #555;
+}
+
+.service p {
+    margin: 5px 0;
+}
+
+.faq {
+    list-style: none;
+}
+
+.faq li {
+    margin-bottom: 10px;
+}
+
+.faq h4 {
+    margin: 0;
+    color: #444;
+}
+
+.faq p {
+    margin: 5px 0;
+}
+@media (min-width: 992px) {
+    article {
+        flex: 3;
+        margin-right: 20px; 
+    }
+
+    aside {
+        flex: 1; 
+        margin-left: 20px; 
+    }
+    .service {
+        padding: 15px; 
+    }
+
+    .faq h4 {
+        font-size: 1.1em;
+    }
+
+    .faq p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    article {
+        flex: 1; 
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    aside {
+        flex: 1;
+        margin-left: 0; 
+        margin-bottom: 20px; 
+    }
+    .service {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 15px; 
+    }
+
+    .faq h4 {
+        font-size: 1em; 
+    }
+
+    .faq p {
+        font-size: 0.9em;
+    }
+}
