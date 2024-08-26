@@ -121,5 +121,8 @@ aside a:hover{
 
     form {
         width: 100%;
+        padding: 10px; 
+        border: none; 
+        box-shadow: none;
     }
 }
